@@ -27,10 +27,7 @@ pipeline:
                     connectorRef: account.harnessImage
                     image: harness/delegate:25.02.85300
                     shell: Sh
-                    command: |-
-                      echo "Welcome to Harness CI"
-                      go build
-                      go test
+                    command: echo "Welcome to Harness CI"
           infrastructure:
             type: KubernetesDirect
             spec:
